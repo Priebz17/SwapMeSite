@@ -1,0 +1,14 @@
+button, a.button {
+
+	cursor: pointer;
+
+	&.gradient-submit {
+		background-image: linear-gradient(to right, rgb(9, 180, 186), rgb(9, 213, 175));
+		height: 55px;
+		width: 190px;
+		border-radius: 35px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+}
