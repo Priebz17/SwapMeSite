@@ -18,7 +18,10 @@ section {
 
 		.pictures {
 			padding: 40px;
-			background-image: linear-gradient(#fff, rgb(9, 213, 175))
+			background-image: linear-gradient(#fff, rgb(9, 213, 175));
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.signup {
@@ -40,18 +43,94 @@ section {
 
 			h1 {
 				margin-bottom: 20px;
-				line-height: 45px;
-				font-size: 35px;
 			}
 
 			p {
-				font-size: 14px;
-				line-height: 25px;
 				margin-bottom: 20px;
 			}
 
 			label {
 				margin-bottom: 40px;
+			}
+
+		}
+
+	}
+
+	&:nth-child(2) {
+
+		flex-flow: column nowrap;
+		padding: 120px 0;
+		align-items: center;
+
+		.top, .points {
+			max-width: 1100px;
+			width: 95%;
+			display: flex;
+		}
+
+		.top {
+			flex-flow: column nowrap;
+			padding-left: 70px;
+			margin-bottom: 30px;
+
+			h1 {
+				margin-bottom: 15px;
+				max-width: 550px;
+			}
+
+			p {
+				max-width: 550px;
+			}
+
+		}
+
+		.points {
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			.point {
+
+				display: flex;
+				flex-flow: row nowrap;
+
+			}
+
+			.bullet {
+				height: 100%;
+				margin-right: 20px;
+
+				.circle {
+					height: 70px;
+					width: 70px;
+					border-radius: 70px;
+					box-shadow: 0px 2px 8px 0 rgba(0,0,0,.1);
+				}
+
+				&.blue .circle {
+					background-color: rgb(59, 194, 208);
+				}
+
+				&.bluegreen .circle {
+					background-color: rgb(48, 204, 188);
+				}
+
+				&.green .circle {
+					background-color: rgb(37, 214, 168);
+				}
+
+			}
+
+			h4 {
+				font-size: 24px;
+				line-height: 46px;
+				margin: 15px 0;
+			}
+
+			p {
+				max-width: 280px;
 			}
 
 		}
@@ -83,6 +162,20 @@ section {
 					align-items: center;
 				}
 
+			}
+
+		}
+
+		&:nth-child(2) {
+
+			.top {
+				padding-left: 0px;
+				align-items: center;
+			}
+
+			.points {
+				flex-flow: column nowrap;
+				align-items: center;
 			}
 
 		}

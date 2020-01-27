@@ -1,0 +1,29 @@
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+
+	.whitespace, .main-foot {
+		width: 100%;
+	}
+
+	.whitespace {
+		height: 250px;
+		background-color: #fff;
+	}
+
+	.main-foot {
+		height: 150px;
+		background-color: $text_blue;
+		padding: 30px 70px;
+
+		p {
+			font-size: 18px;
+			line-height: 30px;
+			color: rgb(82, 116, 122);
+			text-align: center;
+		}
+
+	}
+
+}
