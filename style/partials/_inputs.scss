@@ -1,0 +1,40 @@
+label {
+	display: flex;
+	cursor: pointer;
+	max-width: 400px;
+	width: 95%;
+
+	&.ghost {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		font-size: 22px;
+		font-weight: bold;
+
+		input {
+
+			width: 100%;
+			border-bottom: 1px solid $text_blue;
+			font-size: 16px;
+			height: 40px;
+			margin-top: 15px;
+
+			&::placeholder { color: $text_blue;}
+			&::-webkit-input-placeholder { color: $text_blue;}
+			&:-ms-input-placeholder { color: $text_blue;}
+			&::-ms-input-placeholder { color: $text_blue;}
+
+			&:focus {
+
+				&::placeholder { color: transparent;}
+				&::-webkit-input-placeholder { color: transparent;}
+				&:-ms-input-placeholder { color: transparent;}
+				&::-ms-input-placeholder { color: transparent;}
+
+			}
+
+		}
+
+	}
+
+}

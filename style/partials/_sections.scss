@@ -1,0 +1,75 @@
+section {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+
+	&:first-child {
+
+		margin-top: 100px;
+
+		.pictures, .signup {
+			display: flex;
+			width: 50%;
+		}
+
+		.pictures {
+			padding: 40px;
+		}
+
+		.signup {
+			padding: 80px;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: flex-start;
+			background-color: #fff;
+
+			form {
+				width: 100%;
+				display: flex;
+				flex-flow: column nowrap;
+			}
+
+			h1 {
+				margin-bottom: 20px;
+				line-height: 45px;
+				font-size: 35px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 25px;
+				margin-bottom: 20px;
+			}
+
+		}
+
+	}
+
+}
+
+@media all and (max-width: 767px) {
+
+	section {
+		flex-flow: column nowrap;
+
+		&:first-child {
+
+			.pictures, .signup {
+				width: 100%;
+				padding: 40px;
+			}
+
+			.signup {
+				align-items: center;
+
+				form {
+					align-items: center;
+				}
+
+			}
+
+		}
+
+	}
+
+}
