@@ -1,4 +1,5 @@
 footer {
+
 	display: flex;
 	flex-flow: column nowrap;
 	width: 100%;
@@ -13,9 +14,106 @@ footer {
 	}
 
 	.main-foot {
+
 		height: 150px;
 		background-color: $text_blue;
 		padding: 30px 70px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+
+		.ctas {
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			.logo {
+				height: 40px;
+				width: auto;
+			}
+
+			.buttons {
+
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: flex-start;
+
+				.button {
+					height: 40px;
+					border-radius: 25px;
+					width: 250px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-weight: 600;
+					transition: 200ms all;
+
+					&:first-child {
+						margin-right: 20px;
+					}
+
+					&:hover {
+						background-color: transparent;
+					}
+
+				}
+
+				.green {
+					background-color: rgb(37,214,168);
+					color: #fff;
+
+					&:hover {
+						border: 1px solid rgb(37,214,168);
+					}
+
+				}
+
+				.white {
+					background-color: #fff;
+					color: rgb(26,52,57);
+
+					&:hover {
+						border: 1px solid #fff;
+						color: #fff;
+					}
+
+				}
+
+			}
+
+			.socials {
+
+				display: flex;
+
+				.button.social {
+					height: 40px;
+					width: 40px;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 40px;
+
+					&.fb {
+						background-image: url(/assets/fb.png);
+					}
+
+					&.insta {
+						background-image: url(/assets/insta.png);
+					}
+
+					&.twitter {
+						background-image: url(/assets/twitter.png);
+					}
+
+					&:not(:last-child) {
+						margin-right: 20px;
+					}
+
+				}
+
+			}
+
+		}
 
 		p {
 			font-size: 18px;
