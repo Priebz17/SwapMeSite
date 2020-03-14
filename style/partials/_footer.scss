@@ -15,7 +15,8 @@ footer {
 
 	.main-foot {
 
-		height: 150px;
+		height: auto;
+		min-height: 150px;
 		background-color: $text_blue;
 		padding: 30px 70px;
 		display: flex;
@@ -29,8 +30,8 @@ footer {
 			justify-content: space-between;
 
 			.logo {
-				height: 40px;
-				width: auto;
+				width: 160px;
+				height: auto;
 			}
 
 			.buttons {
@@ -120,6 +121,92 @@ footer {
 			line-height: 30px;
 			color: rgb(82, 116, 122);
 			text-align: center;
+		}
+
+	}
+
+}
+
+@media all and (max-width: 1110px) {
+
+	footer {
+
+		.main-foot {
+
+			.ctas {
+
+				.buttons {
+
+					.button {
+
+						width: 200px;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media all and (max-width: 900px) {
+
+	footer {
+
+		.main-foot {
+
+			.ctas {
+
+				flex-flow: column nowrap;
+				align-items: center;
+
+				.logo, .buttons, .socials {
+
+					margin-bottom: 20px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media all and (max-width: 450px) {
+
+	footer {
+
+		.main-foot {
+
+			.ctas {
+
+				flex-flow: column nowrap;
+				align-items: center;
+
+				.buttons {
+
+					flex-flow: column nowrap;
+					align-items: center;
+
+					.button {
+
+						&:first-child {
+							margin-right: 0px;
+							margin-bottom: 20px;
+						}
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}
