@@ -33,6 +33,25 @@ label {
 
 			}
 
+			&.triggered:invalid {
+
+				+ .invalid-label {
+					opacity: 1;
+				}
+
+			}
+
+			+ .invalid-label {
+
+				font-size: 14px;
+				color: red;
+				font-weight: 400;
+				margin-top: 5px;
+				opacity: 0;
+				transition: 100ms opacity;
+
+			}
+
 		}
 
 	}

@@ -1,0 +1,14 @@
+const emailInput:HTMLInputElement = document.getElementById("email_address") as HTMLInputElement;
+const topSignupForm:HTMLFormElement = document.querySelector(".signup form") as HTMLFormElement;
+
+emailInput.addEventListener("blur", () => {
+
+	emailInput.classList.add("triggered");
+
+}, false);
+
+topSignupForm.addEventListener("submit", () => {
+
+	emailInput.classList.add("triggered");
+
+}, false);
