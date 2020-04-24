@@ -1,14 +1,19 @@
 const emailInput:HTMLInputElement = document.getElementById("email_address") as HTMLInputElement;
 const topSignupForm:HTMLFormElement = document.querySelector(".signup form") as HTMLFormElement;
 
-emailInput.addEventListener("blur", () => {
+// this handles the thankyou page
+if (topSignupForm != null) {
 
-	emailInput.classList.add("triggered");
+	emailInput.addEventListener("blur", () => {
 
-}, false);
+		emailInput.classList.add("triggered");
 
-topSignupForm.addEventListener("submit", () => {
+	}, false);
 
-	emailInput.classList.add("triggered");
+	topSignupForm.addEventListener("submit", () => {
 
-}, false);
+		emailInput.classList.add("triggered");
+
+	}, false);
+
+}

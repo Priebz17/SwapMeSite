@@ -173,12 +173,87 @@ section {
 
 }
 
+#thank-you-section {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	background-image: url(/assets/green-hangers.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 150px 0;
+	align-items: center;
+
+	.check {
+		height: 80px;
+		width: 96px;
+		margin-bottom: 50px;
+	}
+
+	h1, p {
+		max-width: 767px;
+		width: 95%;
+	}
+
+	h1 {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 70px;
+		letter-spacing: 1.75px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	p {
+		text-align: center;
+		font-size: 25px;
+		color: #fff;
+		line-height: 45px;
+		margin-bottom: 75px;
+	}
+
+	a {
+		color: #fff;
+		background-color: #000;
+		height: 55px;
+		width: 210px;
+		border-radius: 55px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
+
+@media all and (max-width: 500px) {
+
+	#thank-you-section {
+
+		padding: 75px 0;
+
+		h1 {
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 36px;
+		}
+
+	}
+
+}
+
 @media all and (max-width: 767px) {
 
 	section {
 		flex-flow: column nowrap;
 
 		&:first-child {
+
+			margin-top: 70px;
 
 			.pictures, .signup {
 				width: 100%;
