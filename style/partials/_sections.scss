@@ -142,7 +142,74 @@ section {
 		padding-bottom: 165px;
 
 		p {
-			margin-bottom: 100px;
+			margin-bottom: 70px;
+		}
+
+		img {
+			max-width: 380px;
+			height: auto;
+			margin: 0 50px;
+		}
+
+		#featurePoints {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+
+			.points {
+				display: flex;
+				flex-flow: column nowrap;
+				max-width: 300px;
+				margin-top: 130px;
+
+				.point {
+
+					display: flex;
+					flex-flow: column nowrap;
+
+					.dot {
+						height: 15px;
+						width: 15px;
+						background-color: rgb(37, 214, 168);
+						margin-bottom: 15px;
+						border-radius: 15px;
+					}
+
+					h3, p {
+						color: rgb(26, 52, 57);
+						text-align: right;
+					}
+
+					h3 {
+						font-size: 24px;
+					}
+
+					p {
+						font-size: 14px;
+					}
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 30px;
+					align-items: flex-end;
+
+					.point {
+						align-items: flex-end;
+					}
+
+				}
+
+				&:last-child {
+					align-items: flex-start;
+
+					h3, p {
+						text-align: left;
+					}
+
+				}
+
+			}
+
 		}
 
 	}
@@ -223,6 +290,14 @@ section {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+}
+
+@media all and (max-width: 800px) {
+
+	section:nth-child(3) #featurePoints {
+		flex-flow: column nowrap;
 	}
 
 }
