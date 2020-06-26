@@ -214,6 +214,37 @@ section {
 
 	}
 
+	&:nth-child(4) {
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(/assets/green-hangers.jpg);
+
+		h1, p {
+			color: #fff;
+		}
+
+		.cards {
+
+			display: flex;
+
+			.card {
+
+				display: flex;
+				flex-flow: column nowrap;
+				width: 240px;
+
+				&:not(:last-child) {
+					margin-right: 90px;
+				}
+			
+			}
+
+		}
+
+	}
+
 	&:nth-child(3), &:nth-child(4) {
 
 		padding-top: 100px;
