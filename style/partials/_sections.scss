@@ -275,6 +275,86 @@ section {
 
 	}
 
+	&:nth-child(5) {
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(/assets/regularhangers.jpg);
+		padding-top: 200px;
+		justify-content: center;
+
+		.drop-form {
+			max-width: 900px;
+			width: 95%;
+			background-color: #fff;
+			padding: 100px 0;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			border-radius: 2px;
+			align-self: flex-end;
+			box-shadow: 0px 4px 10px 0 rgba(0,0,0,.1);
+			margin-bottom: -20px;
+			z-index: 10;
+
+			h1, p {
+				color: rgb(26, 52, 57);
+				text-align: center;
+				width: 95%;
+			}
+
+			h1 {
+				font-size: 35px;
+				margin-bottom: 15px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 25px;
+				margin-bottom: 25px;
+				max-width: 600px;
+			}
+
+			form {
+				max-width: 500px;
+				width: 95%;
+				border-radius: 100px;
+				border: 1px solid rgb(26, 52, 57);
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				padding: 10px;
+
+				input[type=email] {
+					flex: 1;
+					margin-right: 10px;
+					border-radius: 12px;
+					text-indent: 15px;
+					font-size: 14px;
+
+					&::placeholder { color: $text_blue;}
+					&::-webkit-input-placeholder { color: $text_blue;}
+					&:-ms-input-placeholder { color: $text_blue;}
+					&::-ms-input-placeholder { color: $text_blue;}
+
+					&:focus {
+
+						&::placeholder { color: transparent;}
+						&::-webkit-input-placeholder { color: transparent;}
+						&:-ms-input-placeholder { color: transparent;}
+						&::-ms-input-placeholder { color: transparent;}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
 	&:nth-child(3), &:nth-child(4) {
 
 		padding-top: 100px;
