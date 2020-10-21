@@ -1,0 +1,35 @@
+.legal {
+    padding: 0px 40px;
+    display: flex;
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 1150px;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1, h2 {
+            margin-top:15px;
+            margin-bottom:15px;
+        }
+
+        p {
+            margin-bottom:15px;
+        }
+
+        ol {
+            margin-left:20px;
+            margin-bottom:15px;
+
+            li {
+                margin-bottom:10px;
+            }
+        }
+
+    }
+}
